@@ -54,3 +54,4 @@ D:\5_2023_Summer\PRN211\Final_Project\PRN211_Final_Project\obj\Debug\PRN211_Fina
 D:\5_2023_Summer\PRN211\Final_Project\PRN211_Final_Project\obj\Debug\PRN211_Final_Project.MainScreen.LeaderBoard.resources
 D:\5_2023_Summer\PRN211\Final_Project\PRN211_Final_Project\obj\Debug\PRN211_Final_Project.MainScreen.changePass.resources
 D:\5_2023_Summer\PRN211\Final_Project\PRN211_Final_Project\obj\Debug\PRN211_Final_Project.MainScreen.Register.resources
+D:\5_2023_Summer\PRN211\Final_Project\PRN211_Final_Project\obj\Debug\PRN211_Final_Project.Admin.AdminScreen.resources

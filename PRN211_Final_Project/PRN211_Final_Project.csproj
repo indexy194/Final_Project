@@ -139,6 +139,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminScreen.Designer.cs">
+      <DependentUpon>AdminScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Car_Game\carGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,7 @@
     <Compile Include="Car_Game\ChangeCarType.Designer.cs">
       <DependentUpon>ChangeCarType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller\GameController.cs" />
     <Compile Include="Controller\ScoreController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="FlappyBird\flappyBird.cs">
@@ -212,6 +219,9 @@
     <Compile Include="T_Rex_Game\tRexGame.Designer.cs">
       <DependentUpon>tRexGame.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminScreen.resx">
+      <DependentUpon>AdminScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Car_Game\carGame.resx">
       <DependentUpon>carGame.cs</DependentUpon>
     </EmbeddedResource>

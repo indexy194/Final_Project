@@ -39,7 +39,10 @@ namespace PRN211_Final_Project.MainScreen
 					{
 						isAuthentication= true;
 						//redirect to admin page
-						MessageBox.Show("Admin dep trai ne");
+						Admin.AdminScreen adminScreen = new Admin.AdminScreen();
+						adminScreen.Show();
+						this.Close();
+
 					}else
 					{
 						//check block account or not

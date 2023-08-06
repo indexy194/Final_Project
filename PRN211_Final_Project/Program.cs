@@ -23,8 +23,11 @@ namespace PRN211_Final_Project
 
 			//Main thread
 			Application.Run(new MainScreen.Loading());
+			//Application.Run(new Admin.AdminScreen());
 
 			//Application.Run(new MainScreen.changePass());
+
+
 
 
 
