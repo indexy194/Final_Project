@@ -11,6 +11,7 @@ namespace PRN211_Final_Project.Car_Game
 {
 	partial class ChangeCarType : Form
 	{
+		int idCurrent;
 		public ChangeCarType()
 		{
 			InitializeComponent();
@@ -68,11 +69,15 @@ namespace PRN211_Final_Project.Car_Game
 		private void clickOK(object sender, EventArgs e)
 		{
 			carGame carGame = new carGame();
-			OKButtonClicked?.Invoke(this, tempCar);
 
-
-			this.DialogResult = DialogResult.OK;
+			carGame.changePlayerCar(tempCar);
+			carGame.setUserCurrent(idCurrent, 1);
+			carGame.Show();
 			this.Close();
+		}
+		public void setUserCurrent(int id)
+		{
+			idCurrent = id;
 		}
 	}
 }

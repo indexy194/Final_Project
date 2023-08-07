@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using PRN211_Final_Project.Car_Game;
 using PRN211_Final_Project.Controller;
 using PRN211_Final_Project.MainScreen;
 using PRN211_Final_Project.Model;
@@ -223,7 +224,11 @@ namespace PRN211_Final_Project
 			award.Visible = false;
 			goLeft = goRight =  false;
 			score = 0;
+			//reset location
 			player.Location = new System.Drawing.Point(234, 532);
+			AI1.Location = new System.Drawing.Point(54,148);
+			AI2.Location = new System.Drawing.Point(357,148);
+
 
 			award.Image = Properties.Resources.bronze;
 
@@ -231,12 +236,6 @@ namespace PRN211_Final_Project
 			roadSpeed = 12;
 			trafficSpeed = 15;
 			playerSpeed = 12;
-
-			AI1.Top = carPosition.Next(200, 500) * -1;
-			AI1.Left = carPosition.Next(3, 234);
-
-			AI2.Top = carPosition.Next(200, 500) * -1;
-			AI2.Left = carPosition.Next(240, 464);
 
 			gameTimer.Start();
 		}
@@ -256,27 +255,17 @@ namespace PRN211_Final_Project
 
 		private void clickChangeCar(object sender, EventArgs e)
 		{
-			btnStart.Enabled = false;
-			btnChangeCar.Enabled = false;
-
-
-			changeYC.OKButtonClicked += changePlayerCar;
-
-			DialogResult result = changeYC.ShowDialog();
-			if (result == DialogResult.Cancel)
-			{
-				btnStart.Enabled = true;
-				btnChangeCar.Enabled = true;
-			}
-
-			changeYC.OKButtonClicked -= changePlayerCar;
-
-
-
+			MessageBox.Show("Feature Updating!!!");
+			//btnStart.Enabled = false;
+			//btnChangeCar.Enabled = false;
+			//ChangeCarType carType = new ChangeCarType();
+			//carType.ShowDialog();
+			//carType.setUserCurrent(idCurrent);
+			
 
 		}
 
-		public void changePlayerCar(object sender, string args) //receive invoke 
+		public void changePlayerCar(string args) //receive invoke 
 		{
 			if (args == "pink")
 			{

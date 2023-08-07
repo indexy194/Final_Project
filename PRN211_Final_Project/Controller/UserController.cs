@@ -175,9 +175,6 @@ namespace PRN211_Final_Project.Controller
 		{
 			List<User> list = new List<User>();
 			SqlConnection con = new SqlConnection(connection);
-
-			User u = new User();
-
 			con.Open();
 
 
@@ -195,6 +192,7 @@ namespace PRN211_Final_Project.Controller
 				{
 					while (reader.Read())
 					{
+						User u = new User();
 						u.Id = reader.GetInt32(0);
 						u.UserName = reader.GetString(1);
 						u.Password = reader.GetString(2);
@@ -206,6 +204,7 @@ namespace PRN211_Final_Project.Controller
 							u.Status = "ADMIN";
 						}
 						u.Role = reader.GetInt32(4);
+						list.Add(u);
 					}
 				}
 				con.Close();

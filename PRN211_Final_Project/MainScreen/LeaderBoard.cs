@@ -15,7 +15,7 @@ namespace PRN211_Final_Project.MainScreen
 	public partial class LeaderBoard : Form
 	{
 		int idCurrent;
-		BindingSource albumBindingSource = new BindingSource();
+		
 		public LeaderBoard()
 		{
 			InitializeComponent();
